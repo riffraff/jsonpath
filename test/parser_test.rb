@@ -6,6 +6,10 @@ class ParserTest < Test::Unit::TestCase
 
   context 'Traversing' do
     context "hash" do
+      should "handle underscore in field names" do
+        path = '$.a_b'
+        assert_resolves({"a_b" => 1}, path, [1])
+      end
       should "parse bareword child with single terminal" do
         path = '$.a'
         assert_resolves({"a" => 1}, path, [1])
