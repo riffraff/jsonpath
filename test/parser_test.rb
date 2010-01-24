@@ -60,6 +60,14 @@ class ParserTest < Test::Unit::TestCase
           "c" => [7, {"name" => 8}, 9],
         }, path, [2, 5, 8])
       end
+      should "find all descendants in a array selection" do
+        path = "$.[0].name"
+        assert_resolves([
+            {'name'=>'joe'},
+            {'name'=>'jean'},
+            {'name'=>'jane'}],
+            path, ['joe', 'jean', 'jane'])
+      end
     end
     context "combination wildcards" do
       should "parses through bare wildcard on array with additional wildcard" do
