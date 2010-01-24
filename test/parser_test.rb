@@ -67,6 +67,13 @@ class ParserTest < Test::Unit::TestCase
             {'name'=>'jean'},
             {'name'=>'jane'}]],
             path, ['joe', 'jean', 'jane'])
+        path = "$.ary[0]..name"
+        assert_resolves({
+          "ary"=>[[
+            {'name'=>'joe'},
+            {'name'=>'jean'},
+            {'name'=>'jane'}]]},
+            path, ['joe', 'jean', 'jane'])
       end
     end
     context "combination wildcards" do
