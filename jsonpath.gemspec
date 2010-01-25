@@ -4,13 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{riffraff_jsonpath}
+  s.name = %q{jsonpath}
   s.version = "0.8.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Bruce Williams", "Gabriele Renzi"]
-  s.date = %q{2010-01-24}
-  s.email = %q{bruce@codefluency.com}
+  s.authors = ["Gabriele Renzi"]
+  s.date = %q{2010-01-25}
+  s.description = %q{The gem implements a simple parser+evaluator for JSONPath expressions in Ruby. It is a fork of bruce-jsonpath which only adds support for underscore in fields and works with warnings enabled.}
+  s.email = %q{rff.rff@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.markdown"

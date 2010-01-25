@@ -4,11 +4,12 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "jsonpath"
+    gem.name = "riffraff_jsonpath"
     gem.summary = %Q{JSONPath support for Ruby}
-    gem.email = "bruce@codefluency.com"
-    gem.homepage = "http://github.com/bruce/jsonpath"
-    gem.authors = ["Bruce Williams"]
+    gem.description = %Q{The gem implements a simple parser+evaluator for JSONPath expressions in Ruby. It is a fork of bruce-jsonpath which only adds support for underscore in fields and works with warnings enabled.}
+    gem.email = "rff.rff@gmail.com"
+    gem.homepage = "http://github.com/riffraff/jsonpath"
+    gem.authors = ["Gabriele Renzi"]
     gem.add_dependency 'treetop'
     # gem is a Gem::Specification... see http://  www.rubygems.org/read/chapter/20 for additional settings
   end
