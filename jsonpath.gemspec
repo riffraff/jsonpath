@@ -4,11 +4,11 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{jsonpath}
-  s.version = "0.8.1"
+  s.name = %q{riffraff_jsonpath}
+  s.version = "0.8.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Bruce Williams"]
+  s.authors = ["Bruce Williams", "Gabriele Renzi"]
   s.date = %q{2010-01-24}
   s.email = %q{bruce@codefluency.com}
   s.extra_rdoc_files = [
@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
      "test/reference_test.rb",
      "test/test_helper.rb"
   ]
-  s.homepage = %q{http://github.com/bruce/jsonpath}
+  s.homepage = %q{http://github.com/riffraff/jsonpath}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
